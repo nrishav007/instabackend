@@ -14,11 +14,11 @@ app.get("/",(req,res)=>{
      res.send({msg:"server run succesfully"})
 })
 
-app.use(express.json())
-app.use("/user",userRoute)
-app.use("/post",postRoute)
-app.use("/fileupload",uploads.single("file"),fileRoute)
-app.use("/fileupload",fileRoute)
+// app.use(express.json())
+// app.use("/user",userRoute)
+// app.use("/post",postRoute)
+// app.use("/fileupload",uploads.single("file"),fileRoute)
+// app.use("/fileupload",fileRoute)
 
 
 app.listen(7500,async(req,res)=>{
